@@ -48,19 +48,15 @@ The system is organized into three distinct, specialized portals:
 
 ### 🏠 Home Page (Authentication Toggle)
 Patients, doctors, and administrators can easily toggle between tabs to login or register.
-![Home Page](https://user-images.githubusercontent.com/36665975/66569676-ad2d8800-eb89-11e9-94e5-ea407622a1fe.png)
+![Home Page](images/hms_home_portal.jpg)
 
 ### 📊 Patient Dashboard
 Includes appointment booking form and history.
-![Patient Dashboard](https://user-images.githubusercontent.com/36665975/66570123-8c196700-eb8a-11e9-845f-ea02013f1d5c.png)
+![Patient Dashboard](images/hms_patient_dashboard.jpg)
 
 ### 🩺 Doctor Dashboard
 Doctors can view scheduled appointments and manage patient prescriptions.
-![Doctor Dashboard](https://user-images.githubusercontent.com/36665975/66570642-a0119880-eb8b-11e9-8d23-be898e1bfa29.png)
-
-### 🔑 Admin Dashboard
-Admins manage doctor listings, view patient histories, and handle system configurations.
-![Admin Dashboard](https://user-images.githubusercontent.com/36665975/66570841-03032f80-eb8c-11e9-9cfc-62b6b869c918.png)
+![Doctor Dashboard](images/hms_doctor_dashboard.jpg)
 
 ---
 
