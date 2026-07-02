@@ -9,6 +9,13 @@ if(isset($_POST['patsub1'])){
   $contact=$_POST['contact'];
 	$password=$_POST['password'];
   $cpassword=$_POST['cpassword'];
+  // Check if email already exists
+  $check_email = mysqli_query($con, "SELECT * FROM patreg WHERE email='$email'");
+  if(mysqli_num_rows($check_email) > 0) {
+      echo "<script>alert('Email already registered! Please use a different email or log in.'); window.location.href = 'index.php';</script>";
+      exit();
+  }
+
   if($password==$cpassword){
   	$query="insert into patreg(fname,lname,gender,email,contact,password,cpassword) values ('$fname','$lname','$gender','$email','$contact','$password','$cpassword');";
     $result=mysqli_query($con,$query);
@@ -19,18 +26,12 @@ if(isset($_POST['patsub1'])){
         $_SESSION['gender'] = $_POST['gender'];
         $_SESSION['contact'] = $_POST['contact'];
         $_SESSION['email'] = $_POST['email'];
+        $_SESSION['pid'] = mysqli_insert_id($con);
         header("Location:admin-panel.php");
     } 
-
-    $query1 = "select * from patreg;";
-    $result1 = mysqli_query($con,$query1);
-    if($result1){
-      $_SESSION['pid'] = $row['pid'];
-    }
-
   }
   else{
-    header("Location:error1.php");
+    echo("<script>alert('Confirm Password doesn\'t match Password! Please try again.'); window.location.href = 'index.php';</script>");
   }
 }
 if(isset($_POST['update_data']))
