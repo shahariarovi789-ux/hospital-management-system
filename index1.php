@@ -17,20 +17,8 @@ include("header.php");
     <link rel="stylesheet" type="text/css" href="style2.css">
 
 
-    
   </head>
-  <style type="text/css">
-    #inputbtn:hover{cursor:pointer;}
-    .card{
-    background: #f8f9fa;
-    border-top-left-radius: 5% 5%;
-    border-bottom-left-radius: 5% 5%;
-    border-top-right-radius: 5% 5%;
-    border-bottom-right-radius: 5% 5%;
-}
-
-  </style>
-  <body style="background: -webkit-linear-gradient(left, #3931af, #00c6ff); background-size: cover;">
+  <body>
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav" >
     <div class="container">
 
